@@ -23,6 +23,7 @@ const toggleNav = () => {
 	overlay.classList.toggle("overlay-active")
 	if (overlay.classList.contains("overlay-active")) {
 		// Animate In - Overlay
+		overlay.removeAttribute("hidden")
 		overlay.classList.replace("overlay-slide-left", "overlay-slide-right")
 
 		// Animate In - Nav Items
